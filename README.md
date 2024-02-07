@@ -21,9 +21,9 @@
     -textfiler med utvärderingsstatistik för alla antal klasser (eval.txt). 
     Denna är antagligen inte så intressant att visa i ett system.
 
-##Gör så här
-# 1. ändra till egna settings (sökvägar et c) i filen scripts\\1_settings.r 
-# 2. Kör hela skriptet scripts\\1_settings.r.
-# 3. Hämta data i den specificerade utdatafoldern.
+#5. Gör så här:
+1. ändra till egna settings (sökvägar et c) i filen scripts\\1_settings.r 
+2. Kör hela skriptet scripts\\1_settings.r.
+3. Hämta data i den specificerade utdatafoldern.
                             
                             '
