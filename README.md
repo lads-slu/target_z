@@ -1,2 +1,1 @@
-# zgenerator
-generates zones (raster and polygon) from multiple raster layers
+Generates zones (raster and polygon) from multiple raster layers
