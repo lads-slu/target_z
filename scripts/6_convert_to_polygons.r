@@ -17,6 +17,12 @@ for (k in 2:5){
   p<-as.polygons(rr)
   p<-disagg(p)
   p$id<-1:nrow(p)
+  p$area<-round(expanse(p))
+  
+  #  #crop with aoi and assign vector of polygons
+  pjagged<-intersect(p, aoi)
+  vectname<-paste0(layername, "_jagged")
+  assign(x=vectname, value=pjagged)
   
   #create points
   pts<-as.points(p)
@@ -63,11 +69,19 @@ p<-aggregate(p, by="zone", dissolve=T)
 
 #do two rounds of fixing
 for (i in 1:2){
-  #add missing areas
+  if(expanse(aoi)-sum(expanse(p))<1) break
+  #add missing areas that are larger than one square meter
+  p<-snap(p, tolerance=1)
   slivers<-(aoi-p)
-  values(p)<-NULL
-  values(slivers)<-NULL
-  if(nrow(slivers) >0) p<-p+slivers
+  if(nrow(slivers)>0 & is.polygons(slivers)) {
+    slivers<-disagg(slivers)
+    sel<-1<expanse(slivers)
+  }
+  if(sum(sel)>0 & is.polygons(slivers)) {
+    slivers<-slivers[sel,]
+    p<-p+slivers
+    }
+  p<-snap(p, tolerance=1)
   p$id<-1:nrow(p)
   
   #extract zone for polygon center points

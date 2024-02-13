@@ -11,6 +11,11 @@ for (k in 2:5){
   fname<-file.path(out.folder, paste0(vectname, ".shp"))
   writeVector(get(vectname),fname, overwrite=T)
   plot(get(vectname), "zone")
+  
+  vectname<-paste0("zones_", k, "_jagged")
+  fname<-file.path(out.folder, paste0(vectname, "_jagged.shp"))
+  writeVector(get(vectname),fname, overwrite=T)
+  plot(get(vectname), "zone")
 }
 
 #write text-files
