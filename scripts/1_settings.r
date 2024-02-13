@@ -17,7 +17,7 @@ raster2.tif<-'dsms\\dsms_sand_171214.tif' #name of a tif raster file or NA
 raster3.tif<-NA #name of a tif raster file or NA
 raster4.tif<-NA #name of a tif raster file or NA
 aoi.shape <- 'in\\field10.shp' # polygon shapefile, only polygon field allowed. If more complex shape, the extent will be used.
-out.folder <-'utdata' #folder to be created under working directory. All exported files are written to this folder.
+out.folder <-'out' #folder to be created under working directory. All exported files are written to this folder.
 prj<-"epsg:3006" #projection of all spatial data (Sweref99TM is epsg: 3006)
 
 #set seed
