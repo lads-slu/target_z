@@ -1,5 +1,6 @@
-(in Swedish)
+# target_z
 
+(in Swedish)
 #1.	I filen scripts\\1_settings.r görs alla ändringar (sökvägar etc). övriga skript ska aldrig behöva öppnas utan körs från detta huvudskript. R-paket som  behövs men inte finns installerade kommer att installeras och en 
 mapp kommer skapas under "working directory" dit utdata exporteras.
 
