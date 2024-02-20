@@ -1,3 +1,5 @@
+# target_z
+
 Terms of use The ‘target_z’ data analysis framework, written in the R programming language for statistical computing and graphics, is provided under the Creative Commons licence: Attribution 4.0 International (CC BY 4.0). The below reference, in English or Swedish shall be clearly presented in systems where target_z is implemented, together with the SLU logotype.
 
 Reference (English) This system is based on target_z [version] by Kristin Persson and Mats Söderström, licensed under a Creative Commons Attribution 4.0 International License. The target_z scripts were developed within the Laboratory for agricultural decision support systems (LADS; www.slu.se/LADS) at the Swedish University of Agricultural Sciences (SLU) with funding from Swedish farmers’ foundation for agricultural research (contract: O-18-20-162), Formas contract: 2019-02280) and Region Västra Götaland/SLU contracts: RUN 2018-00141 and 2021-00020).
